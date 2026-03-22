@@ -1,0 +1,7 @@
+id,nombre,equipo_id,motor_id
+AMR26,AMR26,Aston_Martin,MotorHonda
+SF-26,SF-26,Ferrari,MotorFerrari
+MCL40,MCl40,McLaren,MotorMercedes
+MW17,MW17,Mercedes,MotorMercedes
+
+

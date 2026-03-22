@@ -1,0 +1,6 @@
+id,nombre,fecha,nvueltas,temporada_id,circuito_id
+GP_MIAMI_2026,Gran Premio de Miami,2026-05-03T22:00:00,57,Temporada2026,Miami_International_Autodrome
+GP_AUSTRIA_2026,GP de Austria,2026-06-28T15:00:00,71,Temporada2026,Red_bull_ring
+GP_ESPAÑA_2026, Gran Premio de Catalunya,2026-05-28T15:00:00,50,Temporada2026,Circuito_de_Catalunya
+
+

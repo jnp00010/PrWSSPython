@@ -1,0 +1,1709 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PerteneceA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PerteneceA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tiene"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#albergaCarrera -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#albergaCarrera">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#seCelebraEn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Circuito"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Carrera"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#compiteEn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#compiteEn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Temporada"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#construye -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#construye">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esConstruidoPor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Coche"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#correEn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#correEn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Piloto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Carrera"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esCampeonatoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esCampeonatoDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PerteneceA"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneCampeonato"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Campeon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Temporada"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esConstruidoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esConstruidoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Coche"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esDirectorDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esDirectorDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PerteneceA"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneDirector"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#DirectorDeEquipo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esGanado -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esGanado">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esGanadoPorEquipo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esGanadoPorEquipo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esGanado"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#ganaCampeonatoConstructores"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#CampeonConstructores"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esGanadoPorPiloto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esGanadoPorPiloto">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esGanado"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#ganaCampeonatoPilotos"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#CampeonPilotos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Piloto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esPilotoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esPilotoDe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PerteneceA"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tienePiloto"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Piloto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esUtilizadoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esUtilizadoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#utilizaMotor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Motor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Coche"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#ganaCampeonatoConstructores -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#ganaCampeonatoConstructores">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#ganador"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#CampeonConstructores"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#ganaCampeonatoPilotos -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#ganaCampeonatoPilotos">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#ganador"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Piloto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#CampeonPilotos"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#ganador -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#ganador">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#participaEn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#participaEn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Piloto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Temporada"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#perteneceATemporada -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#perteneceATemporada">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PerteneceA"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneCarrera"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Carrera"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Temporada"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#seCelebraEn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#seCelebraEn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Carrera"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Circuito"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tiene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tiene">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneCampeonato -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneCampeonato">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tiene"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Temporada"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Campeon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneCarrera -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneCarrera">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tiene"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Temporada"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Carrera"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneDirector -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneDirector">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tiene"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#DirectorDeEquipo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tienePiloto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tienePiloto">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tiene"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Piloto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#utilizaMotor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#utilizaMotor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Coche"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Motor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Año -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Año">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#AñoCampeonato -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#AñoCampeonato">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Año"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Campeon"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#AñoTemporada"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#AñoTemporada -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#AñoTemporada">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Año"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Temporada"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Fabricante -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Fabricante">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Motor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Fecha -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Fecha">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Carrera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NVueltas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NVueltas">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Numero"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Carrera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Nacionalidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Nacionalidad">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Nombre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NombreCarrera -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NombreCarrera">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Nombre"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Carrera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NombreCircuito -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NombreCircuito">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Nombre"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Circuito"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NombreCoche -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NombreCoche">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Nombre"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Coche"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NombreEquipo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NombreEquipo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Nombre"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NombreMotor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NombreMotor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Nombre"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Motor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NombrePersona -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NombrePersona">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Nombre"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Numero -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Numero">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Campeon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Campeon">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#CampeonConstructores -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#CampeonConstructores">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#CampeonConstructores"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esGanadoPorEquipo"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Campeon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#AñoCampeonato"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1950</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#CampeonPilotos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#CampeonPilotos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#CampeonPilotos">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#CampeonPilotos"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esGanadoPorPiloto"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Piloto"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Campeon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#AñoCampeonato"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1950</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Carrera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Carrera">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Carrera"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#perteneceATemporada"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Temporada"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#seCelebraEn"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Circuito"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Circuito -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Circuito">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Circuito"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#albergaCarrera"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Carrera"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Coche -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Coche">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Coche"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esConstruidoPor"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#utilizaMotor"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Motor"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#DirectorDeEquipo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#DirectorDeEquipo">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#DirectorDeEquipo"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esDirectorDe"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Persona"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esDirectorDe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Piloto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#compiteEn"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Temporada"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#construye"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Coche"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#ganaCampeonatoConstructores"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#CampeonConstructores"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneDirector"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#DirectorDeEquipo"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tienePiloto"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Piloto"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Piloto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Motor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Motor">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Motor"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esUtilizadoPor"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Coche"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Persona">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Piloto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Piloto">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Piloto"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#correEn"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Carrera"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#ganaCampeonatoPilotos"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#CampeonPilotos"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#participaEn"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Temporada"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esPilotoDe"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Persona"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esPilotoDe"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Temporada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Temporada">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Temporada"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneCampeonato"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Campeon"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneCarrera"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Carrera"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Temporada"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneCampeonato"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Campeon"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#AñoTemporada"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1950</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Carreras_con_mas_de_60_vueltas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Carreras_con_mas_de_60_vueltas">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NVueltas"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Carreras_de_la_temporada_2026 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Carreras_de_la_temporada_2026"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Carreras_que_se_celebran_en_un_circuito -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Carreras_que_se_celebran_en_un_circuito"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Director_de_equipo_del_equipo_Renaul -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Director_de_equipo_del_equipo_Renaul"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Equipo_que_compiten_la_temporada_2026 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Equipo_que_compiten_la_temporada_2026"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Equipo_que_gano_el_campeonato_de_2005 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Equipo_que_gano_el_campeonato_de_2005"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Piloto_que_gano_el_campeonato_2005 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Piloto_que_gano_el_campeonato_2005"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Pilotos_con_la_nacionalidad_britanica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Pilotos_con_la_nacionalidad_britanica">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Piloto"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Nacionalidad"/>
+                        <owl:hasValue>Reino Unido</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Pilotos_que_han_corrido_el_gran_premio_de_españa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Pilotos_que_han_corrido_el_gran_premio_de_españa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Pilotos_que_han_participado_en_la_temporada_2026 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Pilotos_que_han_participado_en_la_temporada_2026"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Pilotos_que_tiene_el_equipo_Ferrari -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Pilotos_que_tiene_el_equipo_Ferrari"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Pilotos_que_tienen_un_campeonato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Pilotos_que_tienen_un_campeonato"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Que_coches_utilizan_el_motor_mercedes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Que_coches_utilizan_el_motor_mercedes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Que_motor_utiliza_el_coche_AMR26 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#PREGUNTA:_Que_motor_utiliza_el_coche_AMR26"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Campeon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Carrera"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Circuito"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Coche"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Equipo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Motor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Persona"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Temporada"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Año"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Fabricante"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Fecha"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Nacionalidad"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Nombre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#Numero"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NombreCarrera"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NombreCircuito"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NombreCoche"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NombreEquipo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NombreMotor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#NombrePersona"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/ci">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/ca">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/e">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/m">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Circuito-&gt;Carrera</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#albergaCarrera"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/ci"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/ca"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#seCelebraEn"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/ca"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/ci"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Piloto_Equipo-&gt;Temporada</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esPilotoDe"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#compiteEn"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/e"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/t"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#participaEn"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Equipo-&gt;Coche</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#construye"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/e"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esConstruidoPor"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Campeonato-&gt;Temporada</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esCampeonatoDe"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneCampeonato"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/t"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Coche-&gt;Equipo</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esConstruidoPor"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#construye"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/e"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Director-&gt;Equipo</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esDirectorDe"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/d"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneDirector"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/e"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Campeonato-&gt;Equipo</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esGanadoPorEquipo"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#ganaCampeonatoConstructores"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/e"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Campeonato-&gt;Piloto</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esGanadoPorPiloto"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#ganaCampeonatoPilotos"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Piloto-&gt;Equipo</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esPilotoDe"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tienePiloto"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/e"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Motor-&gt;Coche</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esUtilizadoPor"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/m"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#utilizaMotor"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Equipo-&gt;Campeonato</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#ganaCampeonatoConstructores"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/e"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esGanadoPorEquipo"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Piloto-&gt;Campeonato</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#ganaCampeonatoPilotos"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esGanadoPorPiloto"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Piloto_Temporada-&gt;Carrera</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#participaEn"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneCarrera"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/t"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#correEn"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Carrera-&gt;Temporada</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#perteneceATemporada"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneCarrera"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/t"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Carrera-&gt;Circuito</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#seCelebraEn"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/ca"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/ci"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#albergaCarrera"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/ci"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/ca"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Temporada-&gt;Campeonato</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneCampeonato"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/t"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esCampeonatoDe"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Temporada-&gt;Carrera</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneCarrera"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/t"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#perteneceATemporada"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Equipo-&gt;Director</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tieneDirector"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/e"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esDirectorDe"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/d"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Equipo-&gt;Piloto</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#tienePiloto"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/e"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esPilotoDe"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Coche-&gt;Motor</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#utilizaMotor"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2#esUtilizadoPor"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/m"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/usuario/ontologies/2026/2/untitled-ontology-2/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
